@@ -130,6 +130,13 @@ i{position: relative; animation-name: me; animation-duration: 3s;animation-itera
 @media (max-width:767px){
     .about-me-inner-container{display:block; text-align: center;}
     .about-me-inner-container > img{width: 20rem; height: 20rem; margin-right: 0rem;margin-bottom: 5rem;}
+i{transform: rotateZ(90deg);}
+
+@keyframes me{
+  0%   {bottom:0px; top:0px;}
+  75%  {bottom:0px; top:100px;}
+  100% {bottom:0px; top:0px;}
+}
 }
 /* About me */
 
@@ -137,7 +144,7 @@ i{position: relative; animation-name: me; animation-duration: 3s;animation-itera
 
 .hobby{border: 1px solid #ccc;}
 .hobby img{width:100%; height: auto;}
-.hobby:hover{border: 5px solid #777; transform: scaleX(-1);}
+.hobby img:hover{border: 5px solid #777; transform: scaleX(-1);}
 .my-hobby h2{margin-bottom: 7.5rem;text-shadow: 1px 1px 2px grey, 5px 10px 35px mediumblue;}
 .my-hobby-inner-container{color: #fff;}
 .my-hobby-inner-container h3{font-size: 2.4rem;font-weight: 500; text-align: center; margin-bottom: 2.5rem;}
